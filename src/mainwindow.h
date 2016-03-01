@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QtWidgets>
 
 namespace Ui {
 class MainWindow;
@@ -19,6 +20,7 @@ private slots:
     void printTableWidgetToPdf();
 private:
     Ui::MainWindow *ui;
+    void print(QTableWidget *tableau_a_imprimer, QString titre);
 };
 
 #endif // MAINWINDOW_H
