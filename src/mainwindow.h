@@ -15,12 +15,8 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
-
-private slots:
-    void printTableWidgetToPdf();
 private:
     Ui::MainWindow *ui;
-    void print(QTableWidget *tableau_a_imprimer, QString titre);
 };
 
 #endif // MAINWINDOW_H
