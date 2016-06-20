@@ -10,11 +10,6 @@
 
 #include "fileprinter.h"
 
-FilePrinter::FilePrinter()
-{
-
-}
-
 void FilePrinter::printTableWidgetToPdf(QTableWidget *tableau_a_imprimer)
 {
     ///* Write QTableWidget in PDF file.

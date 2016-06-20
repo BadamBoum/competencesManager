@@ -7,7 +7,6 @@ class QString;
 class FilePrinter
 {
 public:
-    FilePrinter();
     static void printTableWidgetToPdf(QTableWidget *tableau_a_imprimer);
     static void printTableWidgetToPDF(QTableWidget *tableau_a_imprimer, QString titre, QString filePath);
 };
