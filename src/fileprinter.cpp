@@ -69,7 +69,7 @@ void FilePrinter::printTableWidgetToPDF(QTableWidget *tableau_a_imprimer, QStrin
     QTime time;
     date = date.currentDate();
     time = time.currentTime();
-    QString modif ="\nFait le :\t" + date.toString("dddd dd MMMM yyyy") + " a " + time.toString();
+    QString modif ="Fait le :\t" + date.toString("dddd dd MMMM yyyy") + " a " + time.toString();
 
     //changement du format d'ecriture
     editor->setCurrentCharFormat(ItalicFormat);
@@ -87,7 +87,8 @@ void FilePrinter::printTableWidgetToPDF(QTableWidget *tableau_a_imprimer, QStrin
     format_gros_titre.setVerticalAlignment(QTextCharFormat::AlignMiddle);
     format_gros_titre.setUnderlineStyle(QTextCharFormat::SingleUnderline);
 
-    QString title = QString::fromUtf8(titre.toStdString().c_str())+"\n\n";
+    //QString title = QString::fromUtf8(titre.toStdString().c_str())+"\n\n";
+    QString title = "Nom de l'élève.\n";
 
     editor->setCurrentCharFormat(format_gros_titre);
     editor->setAlignment(Qt::AlignCenter);
